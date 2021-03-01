@@ -35,7 +35,7 @@ jobs:
         run: "sudo npm install -g serverless@1.83.0"
 
       - name: "Cache PHP dependencies"
-        uses: "actions/cache@v2"
+        uses: "actions/cache@v2.1.4"
         with:
           path: "~/.composer/cache"
           key: "php-7.4-playground-runner-composer-${{ hashFiles('playground-runner/**/composer.lock') }}"
